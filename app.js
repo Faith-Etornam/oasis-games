@@ -16,7 +16,8 @@ function onScroll() {
 window.addEventListener('scroll', onScroll)
 hamburger.addEventListener('click', (e) => {
     if (menu.classList.contains('menu-show')) {
-        menu.classList.remove('menu-show')
+        menu.classList.remove('menu-show');
+        main.classList.remove("blurry");
         console.log('show');
     }
     else {
